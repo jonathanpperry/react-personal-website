@@ -6,7 +6,7 @@ import { BsFillMoonStarsFill } from "react-icons/bs";
 import {
   AiFillTwitterCircle,
   AiFillLinkedin,
-  AiFillYoutube,
+  AiFillFacebook,
 } from "react-icons/ai";
 import austinMural from "../public/austinMural.jpg";
 import code from "../public/code.png";
@@ -41,7 +41,7 @@ export default function Home() {
                   href="/Resume.pdf"
                   download="resume"
                 >
-                  Resume
+                  Résumé
                 </a>
               </li>
             </ul>
@@ -58,9 +58,15 @@ export default function Home() {
             </p>
           </div>
           <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
-            <AiFillTwitterCircle />
-            <AiFillLinkedin />
-            <AiFillYoutube />
+            <a href="https://twitter.com/jonathanpperry" target="_blank">
+              <AiFillTwitterCircle />
+            </a>
+            <a href="https://linkedin.com/in/jonathanpperry" target="_blank">
+              <AiFillLinkedin />
+            </a>
+            <a href="https://facebook.com/jonnyramen" target="_blank">
+              <AiFillFacebook />
+            </a>
           </div>
           <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80">
             <Image
