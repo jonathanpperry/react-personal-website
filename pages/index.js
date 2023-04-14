@@ -1,7 +1,6 @@
 import { useState } from "react";
 
 import Image from "next/image";
-import { Inter } from "next/font/google";
 import Head from "next/head";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import {
@@ -12,8 +11,6 @@ import {
 import austinMural from "../public/austinMural.jpg";
 import code from "../public/code.png";
 import design from "../public/design.png";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -41,7 +38,8 @@ export default function Home() {
               <li>
                 <a
                   className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
-                  href="#"
+                  href="/Resume.pdf"
+                  download="resume"
                 >
                   Resume
                 </a>
