@@ -17,7 +17,7 @@ export default function Home() {
   return (
     <div className={darkMode ? "dark" : ""}>
       <Head>
-        <title>Jon Perry's Portfolio</title>
+        <title>Jon Perry&apos;s Portfolio</title>
         <meta name="description" content="Generated"></meta>
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -26,7 +26,7 @@ export default function Home() {
         <section className="min-h-screen">
           <nav className="py-10 mb-12 flex justify-between">
             <h1 className="text-xl font-burtons dark:text-white">
-              Jon Perry's Website
+              Jon Perry&apos;s Website
             </h1>
             <ul className="flex items-center">
               <li>
@@ -38,7 +38,7 @@ export default function Home() {
               <li>
                 <a
                   className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
-                  href="/Resume.pdf"
+                  href="/Jonathan_Perry_Resume_June_2023.pdf"
                   download="resume"
                 >
                   Résumé
@@ -71,6 +71,7 @@ export default function Home() {
           <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80">
             <Image
               src={austinMural}
+              alt="mural"
               layout="fill"
               objectFit="cover"
               overflow="hidden"
@@ -84,7 +85,7 @@ export default function Home() {
               What I bring to the table:
             </h3>
             <p className="dark:text-white">
-              Since the beginning of my career as a developer, I've worked in
+              Since the beginning of my career as a developer, I&apos;ve worked in
               <span className="text-teal-500"> several </span>
               industries working on
               <span className="text-teal-500"> various </span>
@@ -113,7 +114,7 @@ export default function Home() {
                 Code your dream project
               </h3>
               <p className="py-2">
-                Do you have an idea for your next great website? Let's make it a
+                Do you have an idea for your next great website? Let&apos;s make it a
                 reality.
               </p>
               <h4 className="py-4 text-teal-600">Design Tools I Use</h4>
