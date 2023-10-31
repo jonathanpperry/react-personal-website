@@ -38,7 +38,7 @@ export default function Home() {
               <li>
                 <a
                   className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
-                  href="/Jonathan_Perry_Resume_June_2023.pdf"
+                  href="/Jonathan_Perry_Resume_Oct_2023.pdf"
                   download="resume"
                 >
                   Résumé
