@@ -11,9 +11,12 @@ import {
 import austinMural from "../public/austinMural.jpg";
 import code from "../public/code.png";
 import design from "../public/design.png";
+import { useRouter } from "next/router";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
+  const router = useRouter();
+
   return (
     <div className={darkMode ? "dark" : ""}>
       <Head>
@@ -24,17 +27,29 @@ export default function Home() {
 
       <main className="bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900">
         <section className="min-h-screen">
-          <nav className="py-10 mb-12 flex justify-between">
-            <h1 className="text-xl font-burtons dark:text-white">
+          <nav className="py-10 mb-12 flex justify-between cursor-pointer">
+            <h1
+              onClick={() => router.push("/")}
+              className="text-xl font-burtons dark:text-white"
+            >
               Jon Perry&apos;s Website
             </h1>
             <ul className="flex items-center">
               <li>
                 <BsFillMoonStarsFill
                   onClick={() => setDarkMode(!darkMode)}
-                  className="cursor-pointer text-2xl"
+                  className="cursor-pointer text-2xl dark:text-white"
                 />
               </li>
+              <li>
+                <a
+                  className="bg-gradient-to-r from-blue-500 to-yellow-300 text-white px-4 py-2 rounded-md ml-8"
+                  href="/works"
+                >
+                  Works
+                </a>
+              </li>
+
               <li>
                 <a
                   className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
@@ -85,7 +100,8 @@ export default function Home() {
               What I bring to the table:
             </h3>
             <p className="dark:text-white">
-              Since the beginning of my career as a developer, I&apos;ve worked in
+              Since the beginning of my career as a developer, I&apos;ve worked
+              in
               <span className="text-teal-500"> several </span>
               industries working on
               <span className="text-teal-500"> various </span>
@@ -114,8 +130,8 @@ export default function Home() {
                 Code your dream project
               </h3>
               <p className="py-2">
-                Do you have an idea for your next great website? Let&apos;s make it a
-                reality.
+                Do you have an idea for your next great website? Let&apos;s make
+                it a reality.
               </p>
               <h4 className="py-4 text-teal-600">Design Tools I Use</h4>
               <p className="text-gray-800 py-1">Photoshop</p>
