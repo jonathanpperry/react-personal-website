@@ -12,6 +12,7 @@ import austinMural from "../public/austinMural.jpg";
 import code from "../public/code.png";
 import design from "../public/design.png";
 import { useRouter } from "next/router";
+import Link from "next/link";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -42,12 +43,12 @@ export default function Home() {
                 />
               </li>
               <li>
-                <a
-                  className="bg-gradient-to-r from-blue-500 to-yellow-300 text-white px-4 py-2 rounded-md ml-8"
+                <Link
                   href="/works"
+                  className="bg-gradient-to-r from-blue-500 to-yellow-300 text-white px-4 py-2 rounded-md ml-8"
                 >
                   Works
-                </a>
+                </Link>
               </li>
 
               <li>
